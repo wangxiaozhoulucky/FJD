@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/kuangg"
+        android:hint="请输入手机号"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:password="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kuangg"
+        android:hint="请输入密码"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_height="30dp">
+           <CheckBox
+               android:id="@+id/ck_pwd"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="20dp"
+               android:text="记住密码" />
+
+           <CheckBox
+               android:id="@+id/ck_login"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="2dp"
+               android:text="自动登录" />
+
+       </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/kuang"
+            android:text="登陆"
+            android:textColor="#f00"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/btn_reg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/btn_login"
+            android:clickable="true"
+            android:text="没有账号？去注册"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/qq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/qq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ登陆" />
+    </LinearLayout>
+</LinearLayout>

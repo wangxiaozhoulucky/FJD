@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/kuangg"
+        android:hint="请输入手机号"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kuangg"
+        android:hint="请输入密码"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/kuang"
+            android:text="注册"
+            android:textColor="#f00"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="120dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_reg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/btn_reg"
+            android:text="没有账号？去登陆"
+            android:textSize="15dp"  />
+    </RelativeLayout>
+
+</LinearLayout>

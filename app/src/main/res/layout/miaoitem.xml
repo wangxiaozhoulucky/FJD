@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="7dp"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/simple"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_fen"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:text="111"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
